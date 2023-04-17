@@ -8,10 +8,13 @@
 import SwiftUI
 
 @main
-struct UITestingDemoApp: App {
+struct UITestDemoApp: App {
+    var user = User()
+ 
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(user)
         }
     }
 }
